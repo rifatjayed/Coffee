@@ -1,10 +1,19 @@
 import React from "react";
 import Hero from "../others/hero";
 import aboutImg from "../../assets/img/about.jpg";
+import bgImg from "../../assets/img/bg_2.jpg";
 import aboutImg4 from "../../assets/img/bg_4.jpg";
+import menu1 from "../../assets/img/menu-1.jpg";
+import menu2 from "../../assets/img/menu-2.jpg";
+import menu3 from "../../assets/img/menu-3.jpg";
+import menu4 from "../../assets/img/menu-4.jpg";
+
 import coffee from "../../assets/img/coffee-beans.png";
 import truck from "../../assets/img/delivery-truck.png";
 import choice from "../../assets/img/choices.png";
+
+import { motion } from "framer-motion";
+import { Link } from "react-router";
 
 const Home = () => {
   return (
@@ -27,7 +36,9 @@ const Home = () => {
               >
                 Discover
               </span>
-              <h2 className="text-4xl font-bold  text-left mb-4">Our Story</h2>
+              <h2 className="text-4xl font-bold  text-left mb-4 uppercase text-white">
+                Our Story
+              </h2>
               <p className="text-gray-500 text-[15px] font-light font-poppins">
                 On her way she met a copy. The copy warned the Little Blind
                 Text, that where it came from it would have been rewritten a
@@ -88,6 +99,83 @@ const Home = () => {
             </p>
           </div>
         </div>
+      </section>
+
+      {/* menu section */}
+      <section
+        className="h-[500px] bg-cover bg-center bg-fixed flex items-center justify-center"
+        style={{ backgroundImage: `url(${aboutImg4})` }}
+      >
+        <div className="px-[100px]">
+          {/* <h1 className="text-white text-4xl font-bold bg-black/50 px-6 py-3 rounded-lg">
+            Tailwind CSS Parallax
+          </h1> */}
+          <div className="flex">
+            <div className="w-1/2 text-right mr-[50px]">
+              <span
+                className="text-[50px] text-[#c49b63] font-display leading-none
+"
+              >
+                Discover
+              </span>
+              <h1 className="text-4xl font-bold  text-white mb-4 uppercase">
+                Our Menu
+              </h1>
+              <p className="text-gray-500 text-[15px] font-light font-poppins">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts. Separated
+                they live in Bookmarksgrove right at the coast of the Semantics,
+                a large language ocean.
+              </p>
+              <Link>
+                <button className="border border-[#c49b63] p-4 text-[#c49b63] mt-[30px] hover:bg-[#c49b63] hover:text-white transition duration-300">
+                  View Full Menu
+                </button>
+              </Link>
+            </div>
+            <div className="grid grid-cols-2 gap-8 w-1/2">
+              <img
+                src={menu1}
+                className="w-[255px] h-[200px]"
+                alt=""
+                srcset=""
+              />
+              <img
+                src={menu2}
+                className="w-[255px] h-[200px]"
+                alt=""
+                srcset=""
+              />
+              <img
+                src={menu3}
+                className="w-[255px] h-[200px]"
+                alt=""
+                srcset=""
+              />
+
+              <img
+                src={menu4}
+                className="w-[255px] h-[200px]"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div
+          className="h-[400px] bg-cover bg-center bg-fixed bg-black bg-opacity-50 flex items-center justify-center"
+          style={{ backgroundImage: `url(${bgImg})` }}
+        >
+          <h1 className="text-white text-4xl font-bold bg-black/50 px-6 py-3 rounded-lg">
+            Tailwind CSS Parallax
+          </h1>
+        </div>
+      </section>
+      <section className="h-[500px]">
+        <h1>heeeeeeeeeeeeeeee</h1>
       </section>
     </div>
   );
