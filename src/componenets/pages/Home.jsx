@@ -2,6 +2,9 @@ import React from "react";
 import Hero from "../others/hero";
 import aboutImg from "../../assets/img/about.jpg";
 import aboutImg4 from "../../assets/img/bg_4.jpg";
+import coffee from "../../assets/img/coffee-beans.png";
+import truck from "../../assets/img/delivery-truck.png";
+import choice from "../../assets/img/choices.png";
 
 const Home = () => {
   return (
@@ -37,6 +40,52 @@ const Home = () => {
                 her for their.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* new section */}
+
+      <section className="bg-[#c49b63] h-[500px]">
+        <div className="flex justify-around items-center h-full px-[100px] gap-10">
+          <div>
+            <img src={choice} className="w-[60px] " alt="" srcset="" />
+            <h1
+              className="mb-[20px] uppercase text-[18px] font-normal
+"
+            >
+              Easy to Order
+            </h1>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+          </div>
+          <div>
+            <img src={truck} className="w-[60px]" alt="" srcset="" />
+            <h1
+              className="mb-[20px] uppercase text-[18px] font-normal
+"
+            >
+              Fastest Delivery
+            </h1>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
+          </div>
+          <div>
+            <img src={coffee} className="w-[60px]" alt="" srcset="" />
+            <h1
+              className="mb-[20px] uppercase text-[18px] font-normal
+"
+            >
+              Quality Coffee
+            </h1>
+            <p>
+              Even the all-powerful Pointing has no control about the blind
+              texts it is an almost unorthographic.
+            </p>
           </div>
         </div>
       </section>
