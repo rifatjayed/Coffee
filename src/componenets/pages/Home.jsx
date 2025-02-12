@@ -8,6 +8,10 @@ import menu1 from "../../assets/img/menu-1.jpg";
 import menu2 from "../../assets/img/menu-2.jpg";
 import menu3 from "../../assets/img/menu-3.jpg";
 import menu4 from "../../assets/img/menu-4.jpg";
+import gallery1 from "../../assets/img/gallery-1.jpg";
+import gallery2 from "../../assets/img/gallery-2.jpg";
+import gallery3 from "../../assets/img/gallery-3.jpg";
+import gallery4 from "../../assets/img/gallery-4.jpg";
 
 import coffee from "../../assets/img/coffee-beans.png";
 import truck from "../../assets/img/delivery-truck.png";
@@ -16,10 +20,12 @@ import choice from "../../assets/img/choices.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 import Hero from "../others/hero";
+import Navbar from "../others/Navbar";
 
 const Home = () => {
   return (
     <div>
+      <Navbar></Navbar>
       {/* <Hero></Hero> */}
       <Hero></Hero>
       {/* About Section */}
@@ -175,9 +181,51 @@ const Home = () => {
           </h1>
         </div>
       </section>
-      {/* <section className="h-[500px]">
-        <h1>heeeeeeeeeeeeeeee</h1>
-      </section> */}
+      <section
+        className=" bg-cover bg-center "
+        style={{ backgroundImage: `url(${aboutImg4})` }}
+      >
+        <div className="text-center py-[100px]">
+          <span className="text-[50px] text-[#c49b63] font-display leading-none ">
+            Discover
+          </span>
+          <h1 className="text-4xl font-bold  text-white mb-4 uppercase">
+            Best Coffee Sellers
+          </h1>
+          <p className="text-gray-500 text-[15px] font-light font-poppins">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and <br></br> Consonantia, there live the blind texts.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-4 ">
+          <img
+            src={gallery1}
+            className="object-cover h-[300px]"
+            alt=""
+            srcset=""
+          />
+          <img
+            src={gallery2}
+            className="object-cover h-[300px]"
+            alt=""
+            srcset=""
+          />
+          <img
+            src={gallery3}
+            className="object-cover h-[300px]"
+            alt=""
+            srcset=""
+          />
+
+          <img
+            src={gallery4}
+            className="object-cover h-[300px]"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </section>
     </div>
   );
 };
