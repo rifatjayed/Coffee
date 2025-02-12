@@ -1,6 +1,6 @@
 import React from "react";
 
-import Hero from "../others/Hero";
+// import Hero from "../others/Hero";
 import aboutImg from "../../assets/img/about.jpg";
 import bgImg from "../../assets/img/bg_2.jpg";
 import aboutImg4 from "../../assets/img/bg_4.jpg";
@@ -15,12 +15,13 @@ import choice from "../../assets/img/choices.png";
 
 import { motion } from "framer-motion";
 import { Link } from "react-router";
+import Hero from "../others/hero";
 
 const Home = () => {
   return (
     <div>
+      {/* <Hero></Hero> */}
       <Hero></Hero>
-
       {/* About Section */}
       <section className="">
         <div className="flex">
