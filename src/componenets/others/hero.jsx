@@ -3,6 +3,7 @@ import img1 from "../../assets/img/bg_1.jpg";
 import img2 from "../../assets/img/bg_2.jpg";
 import img3 from "../../assets/img/bg_3.jpg";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router";
 
 const images = [img1, img2, img3];
 
@@ -35,22 +36,33 @@ const Hero = () => {
       </div>
 
       {/* Overlay Content */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          Welcome to Our Platform
+      <div className="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center text-white text-center px-6">
+        <span
+          className="text-[50px] text-[#c49b63] font-display leading-none
+"
+        >
+          Discover
+        </span>
+        <h1 className="text-xl md:text-3xl font-bold mb-4">
+          The Best Coffee Testing Experience
         </h1>
         <p className="text-lg md:text-xl mb-6">
-          Experience the best services with us
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia.
         </p>
 
         {/* Buttons */}
         <div className="space-x-4">
-          <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 transition rounded-lg shadow-lg text-lg">
-            Get Started
-          </button>
-          <button className="px-6 py-3 bg-gray-700 hover:bg-gray-800 transition rounded-lg shadow-lg text-lg">
-            Learn More
-          </button>
+          <Link>
+            <button className=" w-[150px] bg-[#c49b63] p-4 text-white mt-[30px] hover:bg-[#c49b63] hover:text-white transition duration-300">
+              Order Now{" "}
+            </button>
+          </Link>
+          <Link>
+            <button className="w-[150px] border border-[#c49b63] p-4 text-[#c49b63] mt-[30px] hover:bg-[#c49b63] hover:text-white transition duration-300">
+              View Full Menu
+            </button>
+          </Link>
         </div>
       </div>
     </div>

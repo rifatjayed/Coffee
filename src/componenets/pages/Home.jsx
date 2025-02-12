@@ -1,5 +1,6 @@
 import React from "react";
-import Hero from "../others/hero";
+
+import Hero from "../others/Hero";
 import aboutImg from "../../assets/img/about.jpg";
 import bgImg from "../../assets/img/bg_2.jpg";
 import aboutImg4 from "../../assets/img/bg_4.jpg";
@@ -18,7 +19,6 @@ import { Link } from "react-router";
 const Home = () => {
   return (
     <div>
-      <h1>Home Page</h1>
       <Hero></Hero>
 
       {/* About Section */}
@@ -174,9 +174,9 @@ const Home = () => {
           </h1>
         </div>
       </section>
-      <section className="h-[500px]">
+      {/* <section className="h-[500px]">
         <h1>heeeeeeeeeeeeeeee</h1>
-      </section>
+      </section> */}
     </div>
   );
 };
